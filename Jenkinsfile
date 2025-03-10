@@ -26,7 +26,7 @@ pipeline {
                                     jiraStringField(fieldKey: 'description', value: '${DEFAULT_DESCRIPTION}'),
                                     jiraStringArrayField(fieldKey: 'labels', values: [jiraArrayEntry(value: 'Jenkins'), jiraArrayEntry(value:'Integration')])
                                 ],
-                                projectKey: 'SCRUM',
+                                projectKey: 'JIRA',
                                 issueType: '10001', // task
                                 autoRaiseIssue: true,
                                 autoResolveIssue: false,
