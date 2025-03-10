@@ -30,12 +30,12 @@ import org.junit.internal.AssumptionViolatedException;
 class Base {
 
     protected void run() {
-        /*int min = 1;
+        int min = 1;
         int max = 10;
         int random = new java.util.Random().nextInt((max - min) + 1) + min;
-        if (random % 2 == 0) {*/
-           fail("oops");
-       //}
+        if (random % 2 == 0) {
+            fail("oops");
+        }
     }
 
 }
