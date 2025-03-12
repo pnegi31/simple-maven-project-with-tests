@@ -32,6 +32,7 @@ pipeline {
                                 projectKey: 'JIRA',
                                 issueType: '10001',
                                 autoRaiseIssue: true,
+                                overrideResolvedIssues: true,
                                 autoResolveIssue: false,
                                 autoUnlinkIssue: false
                             )
