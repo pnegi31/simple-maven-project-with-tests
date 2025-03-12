@@ -33,7 +33,7 @@ pipeline {
                                 issueType: '10001',
                                 autoRaiseIssue: true,
                                 autoResolveIssue: false,
-                                autoUnlinkIssue: true
+                                autoUnlinkIssue: false
                             )
                         ]
                     )
