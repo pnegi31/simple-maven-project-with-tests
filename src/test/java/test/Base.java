@@ -30,7 +30,7 @@ import org.junit.internal.AssumptionViolatedException;
 class Base {
 
     protected void run() {
-        fail("oops");
+        fail("PR-1: This test always fails.");
     }
 
 }
