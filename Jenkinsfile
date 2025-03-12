@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage("Clone") {
             steps {
-                checkout scm
+                // Get some code from a GitHub repository
+                git 'https://github.com/pnegi31/simple-maven-project-with-tests.git'
             }
         }
         stage("Run Tests") {
