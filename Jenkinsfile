@@ -14,7 +14,7 @@ pipeline {
                     }
 
                     // Run Maven with the branch behavior as a system property
-                    sh "mvn -Dmaven.test.failure.ignore=true -Dbranch.behavior=${branchBehavior} clean test"
+                    sh "mvn -Dmaven.test.failure.ignore=true -Dbranch.behavior=${branchBehavior} clean package"
                 }
             }
 
