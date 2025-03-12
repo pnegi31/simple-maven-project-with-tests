@@ -30,12 +30,11 @@ import org.junit.internal.AssumptionViolatedException;
 class Base {
 
     protected void run() {
-        int min = 1;
-        int max = 10;
-        int random = new java.util.Random().nextInt((max - min) + 1) + min;
-        if (random % 2 == 0) {
-            fail("oops");
+        int random = new java.util.Random().nextInt(2); // Randomly generates 0 or 1
+        if (random == 0) {
+            fail("PR-3: This test randomly failed.");
         }
+        // Otherwise, the test passes
     }
 
 }
