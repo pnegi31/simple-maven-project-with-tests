@@ -6,11 +6,10 @@ pipeline {
             steps {
                 script {
                     // Determine the branch behavior based on the branch name
-                    String branchBehavior = "fail" // Default to "fail"
                     if (env.BRANCH_NAME == "Feature_2") {
-                        branchBehavior = "pass"
+                        env.branchBehavior = "pass"
                     } else if (env.BRANCH_NAME == "Feature_3") {
-                        branchBehavior = "random"
+                        env.branchBehavior = "random"
                     }
 
                     // Run Maven with the branch behavior as a system property
