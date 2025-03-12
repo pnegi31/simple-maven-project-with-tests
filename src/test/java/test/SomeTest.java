@@ -31,7 +31,7 @@ public class SomeTest extends Base {
     
 
     @Test public void test3o() {
-        System.out.println("branch behaviour=" + System.getProperty("branchBehavior"));
+        System.out.println("branch behaviour=" + System.getProperty("branch.behavior"));
         System.out.println("3");
         run();
     }

@@ -6,7 +6,7 @@ public class Base {
 
     protected void run() {
         // Get the branch name or test behavior from a system property or environment variable
-        String branchBehavior = System.getProperty("branchBehavior", "fail");
+        String branchBehavior = System.getProperty("branch.behavior", "fail");
         System.out.println("Branch behaviour=" + branchBehavior);// Default to "fail"
 
         switch (branchBehavior) {
